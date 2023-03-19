@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd"
+        xmlns:context="http://www.springframework.org/schema/context"
+        >
+    
+   
+      <!--    Auto-annotation Injection -->
+  <context:annotation-config/>
+    <bean id="address" class="mybeans.Address">
+        
+        <property name="c_city" value="katol"></property>
+        <property name="c_pin" value="4434"></property>
+        <property name="cs_add" value="shani mandal,nagpur"></property>
+    </bean>
+       <bean id="cus" class="mybeans.Customer" autowire="no">
+        
+      <property name="cid" value="22"></property>  
+      <property name="cname" value="Raj"></property>
+        
+    </bean>
+
+    
+  
+    
+    
+                </beans>
